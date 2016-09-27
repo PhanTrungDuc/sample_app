@@ -6,6 +6,6 @@ Bundler.require(*Rails.groups)
 
 module SampleApp
   class Application < Rails::Application
-    
+  
   end
 end
