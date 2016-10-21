@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.order_desc.paginate page: params[:page]
   end
 
   def new
